@@ -1,0 +1,138 @@
+.header {
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(226, 229, 232, 0.9);
+  left: 0;
+  position: sticky;
+  right: 0;
+  top: 0;
+  z-index: 40;
+}
+
+.inner {
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+  height: 76px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  width: min(100%, var(--container));
+}
+
+.logo {
+  align-items: center;
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 900;
+  gap: 0.65rem;
+  letter-spacing: 0.08em;
+}
+
+.logoMark {
+  background: var(--color-red);
+  display: inline-block;
+  height: 28px;
+  width: 5px;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  gap: 1.35rem;
+  margin-left: auto;
+}
+
+.nav a {
+  color: var(--color-muted);
+  font-size: 0.88rem;
+  font-weight: 800;
+  transition: color 160ms ease;
+  white-space: nowrap;
+}
+
+.nav a:hover {
+  color: var(--color-red);
+}
+
+.actions {
+  align-items: center;
+  display: flex;
+  gap: 0.85rem;
+}
+
+.languageSwitch {
+  align-items: center;
+  border: 1px solid var(--color-border);
+  display: inline-flex;
+  height: 40px;
+}
+
+.languageSwitch button {
+  background: transparent;
+  border: 0;
+  color: var(--color-muted);
+  font-size: 0.76rem;
+  font-weight: 900;
+  height: 100%;
+  padding: 0 0.65rem;
+}
+
+.languageSwitch button + button {
+  border-left: 1px solid var(--color-border);
+}
+
+.languageSwitch .languageActive {
+  background: var(--color-graphite);
+  color: #ffffff;
+}
+
+.menuButton {
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  height: 42px;
+  justify-content: center;
+  margin-left: auto;
+  width: 46px;
+}
+
+.menuButton span {
+  background: var(--color-text);
+  display: block;
+  height: 2px;
+  width: 18px;
+}
+
+.mobileMenu {
+  background: #ffffff;
+  border-top: 1px solid var(--color-border);
+  display: none;
+  padding: 1rem;
+}
+
+.mobileMenu a:not(.button) {
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+  display: block;
+  font-weight: 800;
+  padding: 1rem 0;
+}
+
+@media (max-width: 1020px) {
+  .nav,
+  .actions {
+    display: none;
+  }
+
+  .menuButton {
+    display: inline-flex;
+  }
+
+  .mobileMenu {
+    display: grid;
+    gap: 1rem;
+  }
+}

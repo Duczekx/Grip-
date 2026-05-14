@@ -1,0 +1,160 @@
+:root {
+  --color-bg: #ffffff;
+  --color-bg-soft: #f4f5f6;
+  --color-bg-technical: #eef0f2;
+  --color-text: #121416;
+  --color-muted: #5d646b;
+  --color-border: #e2e5e8;
+  --color-red: #d71920;
+  --color-red-dark: #a81016;
+  --color-graphite: #202429;
+  --shadow-soft: 0 16px 44px rgba(18, 20, 22, 0.08);
+  --radius-card: 8px;
+  --container: 1180px;
+  --section-y: clamp(4rem, 8vw, 7.5rem);
+  --font-sans: "Aptos", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  letter-spacing: 0;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section {
+  width: 100%;
+  padding: var(--section-y) 1.25rem;
+}
+
+.sectionSoft {
+  background: var(--color-bg-soft);
+}
+
+.container {
+  width: min(100%, var(--container));
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  max-width: 760px;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.sectionLabel {
+  color: var(--color-red);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  color: var(--color-text);
+  font-size: clamp(2rem, 4vw, 3.55rem);
+  font-weight: 800;
+  line-height: 1.04;
+  margin: 0;
+}
+
+.sectionText {
+  color: var(--color-muted);
+  font-size: 1.06rem;
+  line-height: 1.7;
+  margin: 1rem 0 0;
+}
+
+.button {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  display: inline-flex;
+  font-size: 0.95rem;
+  font-weight: 800;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 1.25rem;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.buttonPrimary {
+  background: var(--color-red);
+  color: #ffffff;
+}
+
+.buttonPrimary:hover {
+  background: var(--color-red-dark);
+}
+
+.buttonSecondary {
+  background: #ffffff;
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.buttonSecondary:hover {
+  border-color: var(--color-red);
+  color: var(--color-red);
+}
+
+.imageFallback {
+  align-items: center;
+  background:
+    linear-gradient(135deg, rgba(215, 25, 32, 0.08), transparent 42%),
+    linear-gradient(180deg, #f7f8f9, #e9ecef);
+  border: 1px solid var(--color-border);
+  color: var(--color-muted);
+  display: flex;
+  font-size: 0.82rem;
+  font-weight: 800;
+  justify-content: center;
+  min-height: 260px;
+  padding: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 720px) {
+  .section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

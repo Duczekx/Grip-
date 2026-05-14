@@ -1,0 +1,207 @@
+.layout {
+  align-items: start;
+  display: grid;
+  gap: clamp(2rem, 4vw, 4rem);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr);
+}
+
+.introColumn :global(.sectionHeader) {
+  margin-bottom: clamp(1.25rem, 3vw, 2rem);
+}
+
+.tableWrap {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.05rem 1.25rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.table tr:last-child th,
+.table tr:last-child td {
+  border-bottom: 0;
+}
+
+.table th {
+  color: var(--color-muted);
+  font-size: 0.86rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  width: 36%;
+}
+
+.table td {
+  color: var(--color-text);
+  font-weight: 750;
+  line-height: 1.5;
+}
+
+.dimensionPanel {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.dimensionHeader {
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+}
+
+.dimensionHeader h3 {
+  font-size: 1.08rem;
+  margin: 0;
+}
+
+.dimensionImage {
+  background: linear-gradient(180deg, #f8f9fa, #eef0f2);
+  overflow: hidden;
+  padding: clamp(1.7rem, 3vw, 2.5rem);
+  position: relative;
+}
+
+.dimensionImage img {
+  margin: 0 auto;
+  max-height: 440px;
+  object-fit: contain;
+  width: min(100%, 980px);
+}
+
+.widthMeasure,
+.lengthMeasure {
+  color: var(--color-red);
+  font-size: 0.82rem;
+  font-weight: 900;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.widthMeasure {
+  border-top: 2px solid currentColor;
+  left: 15%;
+  right: 15%;
+  text-align: center;
+  top: 1.15rem;
+}
+
+.widthMeasure::before,
+.widthMeasure::after,
+.lengthMeasure::before,
+.lengthMeasure::after {
+  background: currentColor;
+  content: "";
+  position: absolute;
+}
+
+.widthMeasure::before,
+.widthMeasure::after {
+  height: 12px;
+  top: -7px;
+  width: 2px;
+}
+
+.widthMeasure::before {
+  left: 0;
+}
+
+.widthMeasure::after {
+  right: 0;
+}
+
+.widthMeasure span {
+  background: #ffffff;
+  display: inline-block;
+  padding: 0 0.75rem;
+  position: relative;
+  top: -0.7rem;
+}
+
+.lengthMeasure {
+  border-left: 2px solid currentColor;
+  bottom: 16%;
+  right: 1.2rem;
+  top: 17%;
+  writing-mode: vertical-rl;
+}
+
+.lengthMeasure::before,
+.lengthMeasure::after {
+  height: 2px;
+  left: -7px;
+  width: 12px;
+}
+
+.lengthMeasure::before {
+  top: 0;
+}
+
+.lengthMeasure::after {
+  bottom: 0;
+}
+
+.lengthMeasure span {
+  background: #ffffff;
+  display: inline-block;
+  padding: 0.75rem 0;
+  position: relative;
+  right: 0.7rem;
+  top: 38%;
+}
+
+@media (max-width: 860px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .lengthMeasure {
+    right: 0.65rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .table th,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+
+  .table th {
+    border-bottom: 0;
+    padding-bottom: 0.25rem;
+  }
+
+  .table td {
+    padding-top: 0.25rem;
+  }
+
+  .dimensionImage {
+    padding: 2.5rem 1.2rem 2rem;
+  }
+
+  .widthMeasure {
+    left: 10%;
+    right: 10%;
+  }
+
+  .lengthMeasure {
+    bottom: 18%;
+    top: 18%;
+  }
+}
