@@ -114,11 +114,11 @@ export const translations = {
       title: "Produktbilder, Fertigung und Einsatz werden hier sauber ergänzt.",
       fallback: "Bildplatzhalter",
       images: [
-        { label: "Designvisualisierung Rot", src: "/images/terra-gf-red-cutout.png" },
-        { label: "Designvisualisierung Orange", src: "/images/terra-gf-orange-cutout.png" },
-        { label: "Designvisualisierung Schwarz", src: "/images/terra-gf-black-cutout.png" },
-        { label: "Fertigung im Betrieb", src: "/images/terra-gf-workshop.jpg" },
-        { label: "Oberflächenvorbereitung", src: "/images/terra-gf-primer.jpg" },
+        { label: "TERRA GF 1900 Rot", src: "/images/terra-gf-red-cutout.png" },
+        { label: "TERRA GF 1900 Orange", src: "/images/terra-gf-orange-cutout.png" },
+        { label: "TERRA GF 1900 Schwarz", src: "/images/terra-gf-black-cutout.png" },
+        { label: "Designvisualisierung Rot", src: "/images/terra-gf-render-red.jpg" },
+        { label: "Designvisualisierung Schwarz", src: "/images/terra-gf-render-black.jpg" },
         { label: "Einsatz mit Antonio Carraro", src: "/images/terra-gf-work-1.jpg" },
         { label: "Einsatz mit Antonio Carraro", src: "/images/terra-gf-work-2.jpg" }
       ]
@@ -281,11 +281,11 @@ export const translations = {
       title: "Tutaj można czysto pokazać render, produkcję, przygotowanie powierzchni i pracę w terenie.",
       fallback: "Miejsce na zdjęcie",
       images: [
-        { label: "Wizualizacja projektu czerwona", src: "/images/terra-gf-red-cutout.png" },
-        { label: "Wizualizacja projektu pomarańczowa", src: "/images/terra-gf-orange-cutout.png" },
-        { label: "Wizualizacja projektu czarna", src: "/images/terra-gf-black-cutout.png" },
-        { label: "Produkcja w warsztacie", src: "/images/terra-gf-workshop.jpg" },
-        { label: "Przygotowanie powierzchni", src: "/images/terra-gf-primer.jpg" },
+        { label: "TERRA GF 1900 czerwona", src: "/images/terra-gf-red-cutout.png" },
+        { label: "TERRA GF 1900 pomarańczowa", src: "/images/terra-gf-orange-cutout.png" },
+        { label: "TERRA GF 1900 czarna", src: "/images/terra-gf-black-cutout.png" },
+        { label: "Wizualizacja projektu czerwona", src: "/images/terra-gf-render-red.jpg" },
+        { label: "Wizualizacja projektu czarna", src: "/images/terra-gf-render-black.jpg" },
         { label: "Praca z Antonio Carraro", src: "/images/terra-gf-work-1.jpg" },
         { label: "Praca z Antonio Carraro", src: "/images/terra-gf-work-2.jpg" }
       ]
@@ -448,11 +448,11 @@ export const translations = {
       title: "Product renders, workshop images and field use can be added cleanly here.",
       fallback: "Image placeholder",
       images: [
-        { label: "Red design visualization", src: "/images/terra-gf-red-cutout.png" },
-        { label: "Orange design visualization", src: "/images/terra-gf-orange-cutout.png" },
-        { label: "Black design visualization", src: "/images/terra-gf-black-cutout.png" },
-        { label: "In-house fabrication", src: "/images/terra-gf-workshop.jpg" },
-        { label: "Surface preparation", src: "/images/terra-gf-primer.jpg" },
+        { label: "TERRA GF 1900 red", src: "/images/terra-gf-red-cutout.png" },
+        { label: "TERRA GF 1900 orange", src: "/images/terra-gf-orange-cutout.png" },
+        { label: "TERRA GF 1900 black", src: "/images/terra-gf-black-cutout.png" },
+        { label: "Red design visualization", src: "/images/terra-gf-render-red.jpg" },
+        { label: "Black design visualization", src: "/images/terra-gf-render-black.jpg" },
         { label: "In use with Antonio Carraro", src: "/images/terra-gf-work-1.jpg" },
         { label: "In use with Antonio Carraro", src: "/images/terra-gf-work-2.jpg" }
       ]

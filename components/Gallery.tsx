@@ -15,12 +15,14 @@ export function Gallery({ t }: GalleryProps) {
     <section className="section" id="galerie">
       <div className="container">
         <div className="sectionHeader">
-          <p className="sectionLabel">{t.label}</p>
-          <h2 className="sectionTitle">{t.title}</h2>
+          <h2 className="sectionTitle">{t.label}</h2>
         </div>
         <div className={styles.grid}>
-          {t.images.map((image) => (
-            <figure className={styles.item} key={`${image.src}-${image.label}`}>
+          {t.images.map((image, index) => (
+            <figure
+              className={`${styles.item} ${index < 3 ? styles.productShot : styles.photoShot}`}
+              key={`${image.src}-${image.label}`}
+            >
               {failed[image.src] ? (
                 <div className={styles.placeholder}>{t.fallback}</div>
               ) : (
@@ -30,7 +32,6 @@ export function Gallery({ t }: GalleryProps) {
                   src={image.src}
                 />
               )}
-              <figcaption>{image.label}</figcaption>
             </figure>
           ))}
         </div>

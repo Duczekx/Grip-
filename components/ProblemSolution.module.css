@@ -34,7 +34,9 @@
 }
 
 .imagePanel {
-  background: #ffffff;
+  background:
+    linear-gradient(135deg, rgba(215, 25, 32, 0.08), transparent 35%),
+    #ffffff;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-soft);
@@ -47,6 +49,7 @@
   height: 100%;
   min-height: 480px;
   object-fit: cover;
+  transform: scale(1.01);
   width: 100%;
 }
 
@@ -68,7 +71,18 @@
     grid-template-columns: 1fr;
   }
 
+  .panel {
+    padding: 1.35rem;
+  }
+
   .imagePanel img {
-    min-height: 320px;
+    aspect-ratio: 4 / 3;
+    min-height: 0;
+  }
+
+  .imagePanel figcaption {
+    bottom: 0.85rem;
+    left: 0.85rem;
+    max-width: calc(100% - 1.7rem);
   }
 }

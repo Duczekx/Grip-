@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Dispatch, SetStateAction } from "react";
 import type { Language, Translations } from "@/lib/translations";
 import styles from "./Header.module.css";
@@ -15,6 +15,14 @@ export function Header({ language, setLanguage, t }: HeaderProps) {
   const [open, setOpen] = useState(false);
 
   const closeMenu = () => setOpen(false);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
 
   return (
     <header className={styles.header}>
@@ -42,7 +50,7 @@ export function Header({ language, setLanguage, t }: HeaderProps) {
         <button
           aria-expanded={open}
           aria-label={t.menu}
-          className={styles.menuButton}
+          className={`${styles.menuButton} ${open ? styles.menuOpen : ""}`}
           onClick={() => setOpen((current) => !current)}
           type="button"
         >
@@ -53,15 +61,19 @@ export function Header({ language, setLanguage, t }: HeaderProps) {
 
       {open ? (
         <div className={styles.mobileMenu}>
+          <div className={styles.mobileMenuInner}>
           {t.nav.map((item) => (
             <a href={item.href} key={item.href} onClick={closeMenu}>
               {item.label}
             </a>
           ))}
-          <LanguageSwitch language={language} setLanguage={setLanguage} />
-          <a className="button buttonPrimary" href="#anfrage" onClick={closeMenu}>
-            {t.cta}
-          </a>
+            <div className={styles.mobileActions}>
+              <LanguageSwitch language={language} setLanguage={setLanguage} />
+              <a className="button buttonPrimary" href="#anfrage" onClick={closeMenu}>
+                {t.cta}
+              </a>
+            </div>
+          </div>
         </div>
       ) : null}
     </header>
