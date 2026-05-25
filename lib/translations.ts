@@ -113,14 +113,20 @@ export const translations = {
       label: "Galerie",
       title: "Produktbilder, Fertigung und Einsatz werden hier sauber ergänzt.",
       fallback: "Bildplatzhalter",
+      previous: "Vorherige Bilder",
+      next: "Nächste Bilder",
       images: [
-        { label: "TERRA GF 1900 Rot", src: "/images/terra-gf-red-cutout.png" },
-        { label: "TERRA GF 1900 Orange", src: "/images/terra-gf-orange-cutout.png" },
-        { label: "TERRA GF 1900 Schwarz", src: "/images/terra-gf-black-cutout.png" },
-        { label: "Designvisualisierung Rot", src: "/images/terra-gf-render-red.jpg" },
-        { label: "Designvisualisierung Schwarz", src: "/images/terra-gf-render-black.jpg" },
-        { label: "Einsatz mit Antonio Carraro", src: "/images/terra-gf-work-1.jpg" },
-        { label: "Einsatz mit Antonio Carraro", src: "/images/terra-gf-work-2.jpg" }
+        { label: "TERRA GF 1900 Galerie 01", src: "/gallery/gallery-01.jpg" },
+        { label: "TERRA GF 1900 Galerie 02", src: "/gallery/gallery-02.jpg" },
+        { label: "TERRA GF 1900 Galerie 03", src: "/gallery/gallery-03.jpg" },
+        { label: "TERRA GF 1900 Galerie 04", src: "/gallery/gallery-04.jpg" },
+        { label: "TERRA GF 1900 Galerie 05", src: "/gallery/gallery-05.jpg" },
+        { label: "TERRA GF 1900 Galerie 06", src: "/gallery/gallery-06.jpg" },
+        { label: "TERRA GF 1900 Galerie 07", src: "/gallery/gallery-07.jpg" },
+        { label: "TERRA GF 1900 Galerie 08", src: "/gallery/gallery-08.jpg" },
+        { label: "TERRA GF 1900 Galerie 09", src: "/gallery/gallery-09.jpg" },
+        { label: "TERRA GF 1900 Galerie 10", src: "/gallery/gallery-10.jpg" },
+        { label: "TERRA GF 1900 Galerie 11", src: "/gallery/gallery-11.jpg" }
       ]
     },
     comparison: {
@@ -280,14 +286,20 @@ export const translations = {
       label: "Galeria",
       title: "Tutaj można czysto pokazać render, produkcję, przygotowanie powierzchni i pracę w terenie.",
       fallback: "Miejsce na zdjęcie",
+      previous: "Poprzednie zdjęcia",
+      next: "Następne zdjęcia",
       images: [
-        { label: "TERRA GF 1900 czerwona", src: "/images/terra-gf-red-cutout.png" },
-        { label: "TERRA GF 1900 pomarańczowa", src: "/images/terra-gf-orange-cutout.png" },
-        { label: "TERRA GF 1900 czarna", src: "/images/terra-gf-black-cutout.png" },
-        { label: "Wizualizacja projektu czerwona", src: "/images/terra-gf-render-red.jpg" },
-        { label: "Wizualizacja projektu czarna", src: "/images/terra-gf-render-black.jpg" },
-        { label: "Praca z Antonio Carraro", src: "/images/terra-gf-work-1.jpg" },
-        { label: "Praca z Antonio Carraro", src: "/images/terra-gf-work-2.jpg" }
+        { label: "TERRA GF 1900 galeria 01", src: "/gallery/gallery-01.jpg" },
+        { label: "TERRA GF 1900 galeria 02", src: "/gallery/gallery-02.jpg" },
+        { label: "TERRA GF 1900 galeria 03", src: "/gallery/gallery-03.jpg" },
+        { label: "TERRA GF 1900 galeria 04", src: "/gallery/gallery-04.jpg" },
+        { label: "TERRA GF 1900 galeria 05", src: "/gallery/gallery-05.jpg" },
+        { label: "TERRA GF 1900 galeria 06", src: "/gallery/gallery-06.jpg" },
+        { label: "TERRA GF 1900 galeria 07", src: "/gallery/gallery-07.jpg" },
+        { label: "TERRA GF 1900 galeria 08", src: "/gallery/gallery-08.jpg" },
+        { label: "TERRA GF 1900 galeria 09", src: "/gallery/gallery-09.jpg" },
+        { label: "TERRA GF 1900 galeria 10", src: "/gallery/gallery-10.jpg" },
+        { label: "TERRA GF 1900 galeria 11", src: "/gallery/gallery-11.jpg" }
       ]
     },
     comparison: {
@@ -447,14 +459,20 @@ export const translations = {
       label: "Gallery",
       title: "Product renders, workshop images and field use can be added cleanly here.",
       fallback: "Image placeholder",
+      previous: "Previous images",
+      next: "Next images",
       images: [
-        { label: "TERRA GF 1900 red", src: "/images/terra-gf-red-cutout.png" },
-        { label: "TERRA GF 1900 orange", src: "/images/terra-gf-orange-cutout.png" },
-        { label: "TERRA GF 1900 black", src: "/images/terra-gf-black-cutout.png" },
-        { label: "Red design visualization", src: "/images/terra-gf-render-red.jpg" },
-        { label: "Black design visualization", src: "/images/terra-gf-render-black.jpg" },
-        { label: "In use with Antonio Carraro", src: "/images/terra-gf-work-1.jpg" },
-        { label: "In use with Antonio Carraro", src: "/images/terra-gf-work-2.jpg" }
+        { label: "TERRA GF 1900 gallery 01", src: "/gallery/gallery-01.jpg" },
+        { label: "TERRA GF 1900 gallery 02", src: "/gallery/gallery-02.jpg" },
+        { label: "TERRA GF 1900 gallery 03", src: "/gallery/gallery-03.jpg" },
+        { label: "TERRA GF 1900 gallery 04", src: "/gallery/gallery-04.jpg" },
+        { label: "TERRA GF 1900 gallery 05", src: "/gallery/gallery-05.jpg" },
+        { label: "TERRA GF 1900 gallery 06", src: "/gallery/gallery-06.jpg" },
+        { label: "TERRA GF 1900 gallery 07", src: "/gallery/gallery-07.jpg" },
+        { label: "TERRA GF 1900 gallery 08", src: "/gallery/gallery-08.jpg" },
+        { label: "TERRA GF 1900 gallery 09", src: "/gallery/gallery-09.jpg" },
+        { label: "TERRA GF 1900 gallery 10", src: "/gallery/gallery-10.jpg" },
+        { label: "TERRA GF 1900 gallery 11", src: "/gallery/gallery-11.jpg" }
       ]
     },
     comparison: {

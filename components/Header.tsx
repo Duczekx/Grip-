@@ -88,7 +88,11 @@ export function Header({ language, setLanguage, t }: HeaderProps) {
           ))}
           <div className={styles.mobileActions}>
             <LanguageSwitch language={language} setLanguage={setLanguage} />
-            <a className="button buttonPrimary" href="#anfrage" onClick={closeMenu}>
+            <a
+              className={`button buttonPrimary ${styles.mobileCta}`}
+              href="#anfrage"
+              onClick={closeMenu}
+            >
               {t.cta}
             </a>
           </div>

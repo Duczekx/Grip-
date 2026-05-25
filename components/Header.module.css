@@ -168,7 +168,7 @@
   padding: clamp(1.25rem, 7vw, 3rem) 0 1.5rem;
 }
 
-.mobileMenuInner a:not(.button) {
+.mobileMenuInner a:not(.mobileCta) {
   border-bottom: 1px solid rgba(18, 20, 22, 0.1);
   color: var(--color-text);
   display: block;
@@ -179,7 +179,7 @@
   padding: 0.86rem 0;
 }
 
-.mobileMenuInner a:not(.button):hover {
+.mobileMenuInner a:not(.mobileCta):hover {
   color: var(--color-red);
 }
 
@@ -195,6 +195,10 @@
   background: #ffffff;
   height: 48px;
   width: max-content;
+}
+
+.mobileCta {
+  color: #ffffff;
 }
 
 @media (max-width: 1020px) {
