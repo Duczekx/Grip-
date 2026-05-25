@@ -78,7 +78,7 @@ export const translations = {
     },
     applications: {
       label: "Einsatzbereiche",
-      title: "Für Arbeiten, bei denen große Maschinen nicht sinnvoll sind.",
+      title: "Kompakte Lösung für professionelle Arbeiten im Gelände.",
       items: [
         "Landschaftspflege",
         "Grünschnitt & Äste",
@@ -248,7 +248,7 @@ export const translations = {
     },
     applications: {
       label: "Zastosowania",
-      title: "Do prac, w których duże maszyny nie mają sensu.",
+      title: "Kompaktowe rozwiązanie do profesjonalnych prac terenowych.",
       items: [
         "Pielęgnacja krajobrazu",
         "Zielone odpady i gałęzie",
@@ -418,7 +418,7 @@ export const translations = {
     },
     applications: {
       label: "Applications",
-      title: "For jobs where large machines are not the right fit.",
+      title: "A compact solution for professional field work.",
       items: [
         "Landscape maintenance",
         "Green waste & branches",
