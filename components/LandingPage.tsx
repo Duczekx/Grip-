@@ -6,7 +6,6 @@ import { Header } from "./Header";
 import { Hero } from "./Hero";
 import { StatsBar } from "./StatsBar";
 import { Benefits } from "./Benefits";
-import { ProblemSolution } from "./ProblemSolution";
 import { Applications } from "./Applications";
 import { TechnicalData } from "./TechnicalData";
 import { Gallery } from "./Gallery";
@@ -23,8 +22,7 @@ export function LandingPage() {
       <main>
         <Hero t={t.hero} />
         <StatsBar stats={t.stats} />
-        <Benefits t={t.benefits} comparison={t.comparison} />
-        <ProblemSolution t={t.problemSolution} />
+        <Benefits t={t.benefits} />
         <Applications t={t.applications} />
         <TechnicalData t={t.technicalData} />
         <Gallery t={t.gallery} />

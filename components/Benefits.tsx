@@ -1,17 +1,15 @@
 import type { Translations } from "@/lib/translations";
-import { Comparison } from "./Comparison";
 import styles from "./Benefits.module.css";
 
 type BenefitsProps = {
   t: Translations["benefits"];
-  comparison: Translations["comparison"];
 };
 
 const iconLabels = ["01", "02", "03", "04"];
 
-export function Benefits({ t, comparison }: BenefitsProps) {
+export function Benefits({ t }: BenefitsProps) {
   return (
-    <section className="section" id="vorteile">
+    <section className="section surfaceGrid" id="vorteile">
       <div className="container">
         <div className="sectionHeader">
           <p className="sectionLabel">{t.label}</p>
@@ -25,9 +23,6 @@ export function Benefits({ t, comparison }: BenefitsProps) {
               <p>{card.text}</p>
             </article>
           ))}
-        </div>
-        <div className={styles.comparisonBlock}>
-          <Comparison t={comparison} embedded />
         </div>
       </div>
     </section>

@@ -7,7 +7,7 @@ type ApplicationsProps = {
 
 export function Applications({ t }: ApplicationsProps) {
   return (
-    <section className="section" id="einsatzbereiche">
+    <section className="section surfaceSoft" id="einsatzbereiche">
       <div className="container">
         <div className="sectionHeader">
           <p className="sectionLabel">{t.label}</p>

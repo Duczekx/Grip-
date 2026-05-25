@@ -23,6 +23,10 @@ html {
   scroll-behavior: smooth;
 }
 
+[id] {
+  scroll-margin-top: 76px;
+}
+
 body {
   margin: 0;
   background: var(--color-bg);
@@ -54,6 +58,8 @@ a {
 .section {
   width: 100%;
   padding: var(--section-y) 1.25rem;
+  overflow: hidden;
+  position: relative;
 }
 
 .sectionSoft {
@@ -63,6 +69,68 @@ a {
 .container {
   width: min(100%, var(--container));
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.surfaceWhite {
+  background: #ffffff;
+}
+
+.surfaceSoft {
+  background:
+    radial-gradient(circle at 82% 18%, rgba(215, 25, 32, 0.06), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f5f6f7 100%);
+}
+
+.surfaceGrid {
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f7f8f9 100%);
+}
+
+.surfaceGrid::before {
+  background-image:
+    linear-gradient(rgba(18, 20, 22, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 20, 22, 0.045) 1px, transparent 1px);
+  background-size: 56px 56px;
+  content: "";
+  inset: 0;
+  mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 72%, transparent 100%);
+  opacity: 0.42;
+  pointer-events: none;
+  position: absolute;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 72%, transparent 100%);
+}
+
+.surfaceTechnical {
+  background:
+    radial-gradient(circle at 28% 43%, rgba(255, 255, 255, 0.96), transparent 34%),
+    radial-gradient(circle at 72% 30%, rgba(215, 25, 32, 0.045), transparent 26%),
+    linear-gradient(180deg, #f2f3f4 0%, #eceef1 100%);
+}
+
+.surfaceShowroom {
+  background:
+    radial-gradient(circle at 50% 8%, rgba(18, 20, 22, 0.055), transparent 22%),
+    linear-gradient(180deg, #ffffff 0%, #f8f9fa 54%, #ffffff 100%);
+}
+
+.surfaceInquiry {
+  background:
+    radial-gradient(circle at 18% 24%, rgba(215, 25, 32, 0.08), transparent 30%),
+    linear-gradient(135deg, #f6f7f8 0%, #eceff1 100%);
+}
+
+.surfaceInquiry::before {
+  background:
+    linear-gradient(115deg, transparent 0 54%, rgba(255, 255, 255, 0.52) 54% 68%, transparent 68%),
+    linear-gradient(rgba(18, 20, 22, 0.035) 1px, transparent 1px);
+  background-size: auto, 100% 42px;
+  content: "";
+  inset: 0;
+  opacity: 0.8;
+  pointer-events: none;
+  position: absolute;
 }
 
 .sectionHeader {

@@ -17,7 +17,7 @@ export function Inquiry({ t }: InquiryProps) {
   ] as const;
 
   return (
-    <section className="section" id="anfrage">
+    <section className="section surfaceInquiry" id="anfrage">
       <div className="container">
         <div className={styles.layout}>
           <div className={styles.copy}>

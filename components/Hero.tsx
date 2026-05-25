@@ -36,13 +36,10 @@ export function Hero({ t }: HeroProps) {
       <div className={styles.inner}>
         <div className={styles.copy}>
           <h1>{t.headline}</h1>
-          <p className={styles.subheadline}>{t.subheadline}</p>
+          <p className={styles.subheadline} aria-hidden={!t.subheadline}>
+            {t.subheadline}
+          </p>
           <p className={styles.text}>{t.text}</p>
-          <ul className={styles.facts}>
-            {t.facts.map((fact) => (
-              <li key={fact}>{fact}</li>
-            ))}
-          </ul>
           <div className={styles.buttons}>
             <a className="button buttonPrimary" href="#anfrage">
               {t.primaryCta}

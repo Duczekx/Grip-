@@ -7,20 +7,16 @@ type TechnicalDataProps = {
 
 export function TechnicalData({ t }: TechnicalDataProps) {
   return (
-    <section className="section sectionSoft" id="technische-daten">
+    <section className="section surfaceTechnical" id="technische-daten">
       <div className="container">
         <div className={styles.layout}>
           <div className={styles.introColumn}>
             <div className="sectionHeader">
               <p className="sectionLabel">{t.label}</p>
-              <h2 className="sectionTitle">{t.title}</h2>
             </div>
             <div className={styles.dimensionPanel}>
-              <div className={styles.dimensionHeader}>
-                <h3>{t.dimensionTitle}</h3>
-              </div>
               <div className={styles.dimensionImage}>
-                <img alt={t.dimensions.alt} src="/images/terra-gf-top.png" />
+                <img alt={t.dimensions.alt} src="/images/terra-gf-top-cutout.png" />
                 <div className={styles.widthMeasure}>
                   <span>{t.dimensions.width}</span>
                 </div>

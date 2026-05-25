@@ -14,7 +14,7 @@
 
 .item {
   border-left: 1px solid rgba(255, 255, 255, 0.14);
-  padding: clamp(1.25rem, 3vw, 2rem);
+  padding: clamp(1rem, 2vw, 1.45rem);
 }
 
 .item:last-child {
@@ -23,16 +23,16 @@
 
 .item strong {
   display: block;
-  font-size: clamp(1.35rem, 2.6vw, 2.15rem);
+  font-size: clamp(1.25rem, 2.2vw, 1.85rem);
   line-height: 1;
 }
 
 .item span {
   color: rgba(255, 255, 255, 0.74);
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   font-weight: 750;
-  margin-top: 0.55rem;
+  margin-top: 0.4rem;
 }
 
 @media (max-width: 760px) {

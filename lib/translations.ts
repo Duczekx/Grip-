@@ -7,8 +7,8 @@ export const translations = {
       nav: [
         { label: "Produkt", href: "#produkt" },
         { label: "Vorteile", href: "#vorteile" },
-        { label: "Technische Daten", href: "#technische-daten" },
         { label: "Einsatzbereiche", href: "#einsatzbereiche" },
+        { label: "Technische Daten", href: "#technische-daten" },
         { label: "Galerie", href: "#galerie" },
         { label: "Anfrage", href: "#anfrage" }
       ],
@@ -17,13 +17,13 @@ export const translations = {
     },
     hero: {
       headline: "TERRA GF 1900",
-      subheadline: "Hydraulische Spezial-Greifgabel für Antonio Carraro und Kompakttraktoren.",
+      subheadline: "",
       text:
         "Leicht, kompakt und robust - entwickelt für Maschinen, bei denen Standard-Greifgabeln zu schwer, zu breit oder nicht passend sind.",
       facts: [
         "Eigengewicht ca. 250 kg",
         "Arbeitsbreite 1900 mm",
-        "Gerätedreieck Kat. 1 / Kat. 2 möglich"
+        "Gerätedreieck Kat. I / II / III möglich"
       ],
       primaryCta: "Angebot anfragen",
       secondaryCta: "Technische Daten ansehen",
@@ -39,7 +39,7 @@ export const translations = {
     stats: [
       { value: "1900 mm", label: "Arbeitsbreite" },
       { value: "ca. 250 kg", label: "Eigengewicht" },
-      { value: "Kat. 1 / Kat. 2", label: "Aufnahme" },
+      { value: "Kat. I / II / III", label: "Aufnahme" },
       { value: "Hydraulisch", label: "Obergreifer" }
     ],
     benefits: {
@@ -60,7 +60,7 @@ export const translations = {
         },
         {
           title: "Individuelle Aufnahme",
-          text: "Ausführung passend zur Maschine: Gerätedreieck Kat. 1 / Kat. 2 oder Sonderaufnahme."
+          text: "Ausführung passend zur Maschine: Gerätedreieck Kat. I / II / III oder Sonderaufnahme."
         }
       ]
     },
@@ -96,11 +96,8 @@ export const translations = {
         ["Typ", "Hydraulische Spezial-Greifgabel"],
         ["Arbeitsbreite", "1900 mm"],
         ["Eigengewicht", "ca. 250 kg"],
-        ["Aufnahme", "Gerätedreieck Kat. 1 / Kat. 2 möglich"],
-        ["Hydraulik", "Hydraulischer Obergreifer"],
-        ["Lackierung", "Epoxy-Primer + Industrielack"],
-        ["Fertigung", "Sonderanfertigung nach Kundenwunsch"],
-        ["Einsatzbereiche", "Äste, Grünschnitt, Kompost, Mist, Silage"]
+        ["Aufnahme", "Gerätedreieck Kat. I / II / III möglich"],
+        ["Hydraulik", "Hydraulischer Obergreifer"]
       ],
       dimensionTitle: "Draufsicht mit Grundmaßen",
       dimensions: {
@@ -180,8 +177,8 @@ export const translations = {
       nav: [
         { label: "Produkt", href: "#produkt" },
         { label: "Zalety", href: "#vorteile" },
-        { label: "Dane techniczne", href: "#technische-daten" },
         { label: "Zastosowania", href: "#einsatzbereiche" },
+        { label: "Dane techniczne", href: "#technische-daten" },
         { label: "Galeria", href: "#galerie" },
         { label: "Zapytanie", href: "#anfrage" }
       ],
@@ -190,13 +187,13 @@ export const translations = {
     },
     hero: {
       headline: "TERRA GF 1900",
-      subheadline: "Hydrauliczna specjalistyczna widło-chwytak do Antonio Carraro i traktorów kompaktowych.",
+      subheadline: "",
       text:
         "Lekka, kompaktowa i solidna konstrukcja - zaprojektowana do maszyn, dla których standardowe chwytaki są zbyt ciężkie, zbyt szerokie albo po prostu niedopasowane.",
       facts: [
         "Masa własna ok. 250 kg",
         "Szerokość robocza 1900 mm",
-        "Możliwe mocowanie Gerätedreieck Kat. 1 / Kat. 2"
+        "Możliwe mocowanie Gerätedreieck Kat. I / II / III"
       ],
       primaryCta: "Zapytaj o ofertę",
       secondaryCta: "Zobacz dane techniczne",
@@ -212,7 +209,7 @@ export const translations = {
     stats: [
       { value: "1900 mm", label: "szerokość robocza" },
       { value: "ok. 250 kg", label: "masa własna" },
-      { value: "Kat. 1 / Kat. 2", label: "mocowanie" },
+      { value: "Kat. I / II / III", label: "mocowanie" },
       { value: "Hydrauliczny", label: "górny chwytak" }
     ],
     benefits: {
@@ -233,7 +230,7 @@ export const translations = {
         },
         {
           title: "Indywidualne mocowanie",
-          text: "Wykonanie pod konkretną maszynę: Gerätedreieck Kat. 1 / Kat. 2 albo mocowanie specjalne."
+          text: "Wykonanie pod konkretną maszynę: Gerätedreieck Kat. I / II / III albo mocowanie specjalne."
         }
       ]
     },
@@ -269,11 +266,8 @@ export const translations = {
         ["Typ", "Hydrauliczna specjalistyczna widło-chwytak"],
         ["Szerokość robocza", "1900 mm"],
         ["Masa własna", "ok. 250 kg"],
-        ["Mocowanie", "Gerätedreieck Kat. 1 / Kat. 2 możliwe"],
-        ["Hydraulika", "Hydrauliczny górny chwytak"],
-        ["Lakierowanie", "Epoxy-Primer + lakier przemysłowy"],
-        ["Wykonanie", "Wykonanie specjalne według wymagań klienta"],
-        ["Zastosowania", "Gałęzie, zielone odpady, kompost, obornik, kiszonka"]
+        ["Mocowanie", "Gerätedreieck Kat. I / II / III możliwe"],
+        ["Hydraulika", "Hydrauliczny górny chwytak"]
       ],
       dimensionTitle: "Widok z góry z wymiarami bazowymi",
       dimensions: {
@@ -353,8 +347,8 @@ export const translations = {
       nav: [
         { label: "Product", href: "#produkt" },
         { label: "Benefits", href: "#vorteile" },
-        { label: "Technical Data", href: "#technische-daten" },
         { label: "Applications", href: "#einsatzbereiche" },
+        { label: "Technical Data", href: "#technische-daten" },
         { label: "Gallery", href: "#galerie" },
         { label: "Inquiry", href: "#anfrage" }
       ],
@@ -363,13 +357,13 @@ export const translations = {
     },
     hero: {
       headline: "TERRA GF 1900",
-      subheadline: "Hydraulic special grapple fork for Antonio Carraro and compact tractors.",
+      subheadline: "",
       text:
         "Lightweight, compact and robust - developed for machines where standard grapple forks are too heavy, too wide or simply not suitable.",
       facts: [
         "Approx. 250 kg own weight",
         "1900 mm working width",
-        "Gerätedreieck Cat. 1 / Cat. 2 available"
+        "Gerätedreieck Cat. I / II / III available"
       ],
       primaryCta: "Request quote",
       secondaryCta: "View technical data",
@@ -385,7 +379,7 @@ export const translations = {
     stats: [
       { value: "1900 mm", label: "working width" },
       { value: "approx. 250 kg", label: "own weight" },
-      { value: "Cat. 1 / Cat. 2", label: "mounting" },
+      { value: "Cat. I / II / III", label: "mounting" },
       { value: "Hydraulic", label: "upper grapple" }
     ],
     benefits: {
@@ -406,7 +400,7 @@ export const translations = {
         },
         {
           title: "Custom mounting",
-          text: "Built to match the machine: Gerätedreieck Cat. 1 / Cat. 2 or custom mounting."
+          text: "Built to match the machine: Gerätedreieck Cat. I / II / III or custom mounting."
         }
       ]
     },
@@ -442,11 +436,8 @@ export const translations = {
         ["Type", "Hydraulic special grapple fork"],
         ["Working width", "1900 mm"],
         ["Own weight", "approx. 250 kg"],
-        ["Mounting", "Gerätedreieck Cat. 1 / Cat. 2 available"],
-        ["Hydraulics", "Hydraulic upper grapple"],
-        ["Coating", "Epoxy primer + industrial topcoat"],
-        ["Fabrication", "Custom-built to customer requirements"],
-        ["Applications", "Branches, green waste, compost, manure, silage"]
+        ["Mounting", "Gerätedreieck Cat. I / II / III available"],
+        ["Hydraulics", "Hydraulic upper grapple"]
       ],
       dimensionTitle: "Top view with base dimensions",
       dimensions: {

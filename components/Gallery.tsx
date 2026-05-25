@@ -42,7 +42,7 @@ export function Gallery({ t }: GalleryProps) {
   };
 
   return (
-    <section className="section" id="galerie">
+    <section className="section surfaceShowroom" id="galerie">
       <div className="container">
         <div className={styles.header}>
           <div className="sectionHeader">

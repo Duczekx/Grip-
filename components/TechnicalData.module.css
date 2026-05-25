@@ -1,12 +1,12 @@
 .layout {
-  align-items: start;
+  align-items: center;
   display: grid;
   gap: clamp(2rem, 4vw, 4rem);
   grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr);
 }
 
 .introColumn :global(.sectionHeader) {
-  margin-bottom: clamp(1.25rem, 3vw, 2rem);
+  margin-bottom: 0.9rem;
 }
 
 .tableWrap {
@@ -52,44 +52,30 @@
 }
 
 .dimensionPanel {
-  background: #ffffff;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-card);
-  box-shadow: var(--shadow-soft);
-  overflow: hidden;
-}
-
-.dimensionHeader {
-  align-items: center;
-  border-bottom: 1px solid var(--color-border);
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 1.25rem;
-}
-
-.dimensionHeader h3 {
-  font-size: 1.08rem;
-  margin: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
 }
 
 .dimensionImage {
-  background:
-    radial-gradient(circle at 50% 45%, rgba(255, 255, 255, 0.96), rgba(238, 240, 242, 0.94) 62%, #e6e9ec 100%);
-  overflow: hidden;
-  padding: clamp(1.7rem, 3vw, 2.5rem);
+  background: transparent;
+  overflow: visible;
+  padding: clamp(1.45rem, 2.4vw, 2rem) clamp(0.5rem, 1.4vw, 1rem);
   position: relative;
 }
 
 .dimensionImage img {
   margin: 0 auto;
-  max-height: 440px;
+  max-height: 520px;
   object-fit: contain;
-  width: min(100%, 980px);
+  width: min(112%, 1120px);
 }
 
 .widthMeasure,
 .lengthMeasure {
-  color: var(--color-red);
+  color: var(--color-text);
   font-size: 0.82rem;
   font-weight: 900;
   position: absolute;
@@ -129,7 +115,7 @@
 }
 
 .widthMeasure span {
-  background: #ffffff;
+  background: var(--color-bg-soft);
   display: inline-block;
   padding: 0 0.75rem;
   position: relative;
@@ -139,7 +125,7 @@
 .lengthMeasure {
   border-left: 2px solid currentColor;
   bottom: 16%;
-  right: 1.2rem;
+  right: -0.75rem;
   top: 17%;
   writing-mode: vertical-rl;
 }
@@ -160,7 +146,7 @@
 }
 
 .lengthMeasure span {
-  background: #ffffff;
+  background: var(--color-bg-soft);
   display: inline-block;
   padding: 0.75rem 0;
   position: relative;
