@@ -21,7 +21,13 @@ export function LandingPage() {
       <Header language={language} setLanguage={setLanguage} t={t.header} />
       <main>
         <Hero t={t.hero} />
-        <StatsBar stats={t.stats} />
+        <StatsBar
+          actions={{
+            primary: t.hero.primaryCta,
+            secondary: t.hero.secondaryCta
+          }}
+          stats={t.stats}
+        />
         <Benefits t={t.benefits} />
         <Applications t={t.applications} />
         <TechnicalData t={t.technicalData} />
